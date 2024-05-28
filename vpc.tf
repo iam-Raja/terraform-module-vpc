@@ -1,5 +1,6 @@
 module "my_vpc" {
-    source= "../terraform-module-vpc-sorce"
+   ## source= "../terraform-module-vpc-sorce"
+    source= "git::https://github.com/iam-Raja/terraform-module-vpc-source.git?ref=main" ##refering after pushing to git
     project_name = var.project_name
     environment = var.environment
     common_tags = var.common_tags
